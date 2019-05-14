@@ -9,6 +9,7 @@ console.log(mainImg)
 
 // DOUBLE CLICK
 nav.addEventListener("dblclick", (e) => {
+    e.preventDefault();
     e.target.style.color = '#17A2B8';
     e.target.setAttribute('style','font-size:2rem')
     }
