@@ -1,6 +1,7 @@
 // Your code goes here
 let nav = document.querySelector('nav');
-let mainImg = document.querySelector('header.intro > img')
+let mainImg = document.querySelector('header.intro > img');
+let backgrd = document.querySelector('div.home');
 
 console.log(mainImg)
 
@@ -18,3 +19,10 @@ mainImg.addEventListener('dblclick', (e) => {
     
 })
 
+// RESIZE 
+window.addEventListener('resize', () => {
+    if(window.innerWidth === 768){
+        backgrd.setAttribute('style', 'background-color: #ddd')
+        }
+    } 
+);
